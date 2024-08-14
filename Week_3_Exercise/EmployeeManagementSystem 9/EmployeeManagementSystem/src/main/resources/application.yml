@@ -1,0 +1,15 @@
+# Primary Data Source Configuration
+spring:
+  datasource:
+    primary:
+      url: jdbc:mysql://localhost:3306/primarydb
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+# Secondary Data Source Configuration
+    secondary:
+      url: jdbc:postgresql://localhost:5432/secondarydb
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
